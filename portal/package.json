@@ -4,8 +4,9 @@
   "description": "微前端主应用",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html -d dev --port 7099",
-    "start:multiple": "parcel multiple.html -d dev --port 7099",
+    "dev": "parcel index.html -d dev --port 7099",
+    "dev:vue": "cd ../vue && npm run dev",
+    "dev:react": "cd ../react && npm run dev",
     "build": "parcel build index.html -d dist --public-url / --no-source-maps",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
